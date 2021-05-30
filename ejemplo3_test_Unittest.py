@@ -6,7 +6,7 @@ class TestingStringMethods(unittest.TestCase):
 
    # Este método prueba si dos cadenas son iguales
    def test_string_equality(self):
-      self.assertEqual('ssp' * 5, 'sspsspsspsspsspssp')
+      self.assertEqual('ssp' * 6, 'sspsspsspsspsspssp')
 
    # Este método prueba si dos casos de cadena son iguales
    def test_string_case(self):
@@ -17,5 +17,5 @@ class TestingStringMethods(unittest.TestCase):
       self.assertTrue('TUTORIALSPOINT'.isupper())
       self.assertFalse('TUTORIALSpoint'.isupper())
 
-
-unittest.main()
+if __name__ == '__main__':
+	unittest.main()
